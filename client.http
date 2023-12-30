@@ -1,0 +1,51 @@
+### GOODLUCK ###
+POST https://vmsprison.azurewebsites.net/register
+Content-Type: application/json
+
+{
+  "username": "jim",
+  "password": "123"
+}
+
+###
+POST https://vmsprison.azurewebsites.net/login
+Content-Type: application/json
+
+{
+  "username": "jim",
+  "password": "123"
+}
+###
+
+###
+POST https://vmsprison.azurewebsites.net/createvisitorData
+Content-Type: application/json
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDlhNDQ2ZGM1OTA0ZWE0NDdmM2FhZGIiLCJ1c2VybmFtZSI6Ik1pa2F5bGEiLCJwYXNzd29yZCI6IktheWxhMTIzIiwiaWF0IjoxNjg3ODMyNDAyfQ.Y1d8y_KJKQGBUvBJQNpczMLWnYtZGNfsjGRlhb7mZj0
+
+{
+    "name": "Sarah Jose",
+    "icnumber": "124524985563",
+    "relationship": "aunt",
+    "prisonerId": "5512"
+  
+}
+###
+###
+POST https://vmsprison.azurewebsites.net/addprisoner
+Content-Type: application/json
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDlhNDQ2ZGM1OTA0ZWE0NDdmM2FhZGIiLCJ1c2VybmFtZSI6Ik1pa2F5bGEiLCJwYXNzd29yZCI6IktheWxhMTIzIiwiaWF0IjoxNjg3ODMyNDAyfQ.Y1d8y_KJKQGBUvBJQNpczMLWnYtZGNfsjGRlhb7mZj0
+
+{
+    "name": "Harry Jose",
+    "icnumber": "766453890034",
+    "prisonerId": "5512"
+  
+}
+###
+###
+GET https://vmsprison.azurewebsites.net/visitors
+Content-Type: application/json
+###
+
+GET https://vmsprison.azurewebsites.net/prisoner
+Content-Type: application/json
