@@ -227,7 +227,7 @@ const options = {
         openapi: '3.0.0',
         servers: [
             {
-              url: 'https://localhost:3000/',
+              url: 'https://prisonvisitormanagementsystem.azurewebsites.net',
             },
           ],          
         info: {
